@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- Font Awesome CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="stylish.css">
+    <title>HAH's Portfolio</title>
+        <!-- Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">HAH</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#homeSection" id="homeLink" class="active-link">Home</a>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#aboutSection" id="aboutLink">About</a>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projectSection" id="projectLink">Projects</a>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contactSection" id="contactLink">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <a href="Resume.pdf" download="HAH's_CV.pdf_download" class="btn">Download CV <i
+                        class="bi bi-download"></i></a>
+            </div>
+            <button id="darkModeToggle" class="modeToggleBtn">
+                <i class="fas fa-moon" id="modeIcon"></i>
+            </button>
+            <div class="nav-menu-btn">
+                <i id="lol" class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+
+
+        </nav>
+
+
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="homeSection">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Hafiz Abdul Hannan</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>I'm a <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Experienced frontend developer with a passion for creating visually stunning and
+                            user-friendly websites.</p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <button onclick="openEmail()" class="btn blue-btn">Hire Me</button>
+                        <a href="Resume.pdf" target="_blank" class="btn">View Resume <i
+                                class="uil uil-file-alt"></i></a>
+                    </div>
+                    <div class="social_icons">
+                        <div class="icon">
+                            <a href="https://www.instagram.com/hafiz_hannan_4470" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/abdul-hannan-hah" target="_blank">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.facebook.com/hafiz.hannan.470" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://github.com/AbdulHannan-HAH" target="_blank">
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="hafiz-removebg-preview.png" alt="avatar">
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------- ABOUT SECTION ---------------- -->
+            <section class="section" id="aboutSection">
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>My Introduction</h3>
+                            <p>I create responsive, visually appealing websites using modern design principles and clean
+                                code. My focus is on building dynamic interfaces and delivering user-friendly, engaging
+                                experiences tailored to client needs.
+                                Additionally, I have experirence working with content management systems (CMS) like
+                                WordPress.
+                            </p>
+                            <div class="about-btn">
+                                <a href="Resume.pdf" download="HAH's_CV.pdf_download" class="btn" id="l">Download CV <i
+                                        class="bi bi-download"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-section">
+                        <div class="skill-category">
+                            <h4>Frontend</h4>
+                            <div class="skill">
+                                <h5>HTML</h5>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" data-skill="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <h5>CSS</h5>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" data-skill="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <h5>Bootstrap</h5>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" data-skill="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <h5>Javascript</h5>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" data-skill="60%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>Development</h4>
+                            <div class="skill">
+                                <h5>C++</h5>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" data-skill="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <h5>Wordpress</h5>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" data-skill="90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <h5>C#</h5>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" data-skill="89%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <h5>Python</h5>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" data-skill="50%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>Databases</h4>
+                            <div class="skill">
+                                <h5>SQL</h5>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" data-skill="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <h5>MongoDB</h5>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" data-skill="60%"></div>
+                                </div>
+                                <div class="skill">
+                                    <h5>MySql</h5>
+                                    <div class="progress-bar-container">
+                                        <div class="progress-bar" data-skill="80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+
+
+            <!-- -------------- PROJECT SECTION ---------------- -->
+            <section class="section" id="projectSection">
+                <div class="topcontactheadings">
+                    <h2 class="hhhhh">Projects</h2>
+                    <p>Creative solutions, innovative designs. Take a look at my work!</p>
+                </div>
+
+                <!-- First row of 3 projects -->
+                <div class="banners">
+                    <div class="team">
+                        <div class="player captain">
+                            <img src="UAMS.jpeg" alt="UAMS">
+                            <p class="h"><b>University Admission Management System</b></p>
+                            <div class="line"></div>
+                        </div>
+                        <input class="b4" type="button" value="View Now" onclick="redirectToGitHub('UAMS')">
+                    </div>
+
+                    <div class="team">
+                        <div class="player captain">
+                            <img src="pbm.jpg" alt="Phonebook Management System">
+                            <p class="h"><b>Phonebook Management System</b></p>
+                            <div class="line"></div>
+                        </div>
+                        <input class="b4" type="button" value="View Now" onclick="redirectToGitHub('PBMS')">
+                    </div>
+
+                    <div class="team">
+                        <div class="player captain">
+                            <img src="SSG.jpeg" alt="Space Shooter Game">
+                            <p class="h"><b>Space Shooter Game</b></p>
+                            <div class="line"></div>
+                        </div>
+                        <input class="b4" type="button" value="View Now" onclick="redirectToGitHub('SSG')">
+                    </div>
+                </div>
+
+                <!-- Second row of 3 projects -->
+                <div class="banners">
+                    <div class="team">
+                        <div class="player captain">
+                            <img src="GPA.jpeg" alt="GPA & CGPA Calculator">
+                            <p class="h"><b>GPA & CGPA Calculator</b></p>
+                            <div class="line"></div>
+                        </div>
+                        <input class="b4" type="button" value="View Now" onclick="redirectToGitHub('GPA')">
+
+                    </div>
+
+                    <div class="team">
+                        <div class="player captain">
+                            <img src="PACMAN.jpeg" alt="Pacman Game">
+                            <p class="h"><b>Pacman Game</b></p>
+                            <div class="line"></div>
+                        </div>
+                        <input class="b4" type="button" value="View Now" onclick="redirectToGitHub('PACMAN')">
+                    </div>
+
+                    <div class="team">
+                        <div class="player captain">
+                            <img src="SLogo-removebg-preview.png" alt="Sports Academy Management System">
+                            <p class="h"><b>Sports Academy Management System</b></p>
+                            <div class="line"></div>
+                        </div>
+                        <input class="b4" type="button" value="View Now" onclick="redirectToGitHub('SAMS')">
+                    </div>
+                </div>
+            </section>
+            <!-- -------------- CONTACT SECTION ---------------- -->
+
+            <section class="section" id="contactSection">
+                <div class="topcontactheadings">
+                    <h2>Get in touch</h2>
+                    <p>Do you have a project in your mind, contact me here</p>
+                </div>
+                <div class="contact_container">
+                    <div class="c_text_c">
+                        <div class="contact_form_text">
+                            <h2>Find Me <i class="bi bi-arrow-down-short"></i></h2><br>
+                            <p><i class="bi bi-envelope"></i> Email: hafizhannan7067@gmail.com</p><br>
+                            <p><i class="bi bi-telephone"></i> Tel: +92 3079361479</p>
+                        </div>
+                    </div>
+                    <div class="contact_form">
+                        <form action="https://api.web3forms.com/submit" method="POST" return true;" autocomplete="off">
+                            <input type="hidden" name="access_key" value="c3de8f91-fd49-4351-b3b0-a11784738df3">
+                            <div class="form_inputs">
+                                <input type="text" name="Name" class="input_field" placeholder="Name" autocomplete="off"
+                                    required>
+                                <input type="email" name="Email Address" class="input_field" placeholder="Email"
+                                    id="email" autocomplete="off" required>
+                            </div>
+                            <div class="text_area">
+                                <textarea name="Message" placeholder="Message" autocomplete="off" required></textarea>
+                            </div>
+                            <div class="form_button">
+                                <button type="submit" class="btn">Send <i class="bi bi-send"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="footer_first_line">
+            <h2>Hafiz Abdul Hannan.</h2>
+        </div>
+        <div class="footer_menu_list">
+            <ul>
+                <li>
+                    <a href="#homeSection" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#aboutSection" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#projectSection" class="nav-link">Projects</a>
+                </li>
+                <li>
+                    <a href="#contactSection" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_icons">
+            <a href="https://www.facebook.com/hafiz.hannan.470" target="_blank" class="f_icons" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/hafiz_hannan_4470" target="_blank" class="f_icons"
+                aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/abdul-hannan-hah" target="_blank" class="f_icons"
+                aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://x.com/hafiz_ah02?s=09" target="_blank" class="f_icons" aria-label="Twitter">
+                <i class="bi bi-twitter"></i>
+            </a>
+        </div>
+
+        <div class="bottom_footer">
+            <p>Copyright &copy; <a href="#homeSection" style="text-decoration: none;">Hafiz Abdul Hannan</a> - All
+                rights reserved 2024.</p>
+        </div>
+        <a href="#homeSection" id="scrollToTopBtn" class="scrollToTopBtn">
+            <i class="bi bi-chevron-up"></i>
+        </a>
+      </footer>
+    <script src="functions.js"></script>
+</body>
+
+</html>
